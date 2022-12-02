@@ -39,7 +39,7 @@ with open("plastic-pollution.csv", "r") as FILE:
             myDataSet.append(temp)
 
 cur.execute("""CREATE TABLE IF NOT EXISTS plasticPollution(
-    Entity TEXT PRIMARY KEY,
+    Entity TEXT,
     Code TEXT,
     Year TEXT,
     Plastic TEXT);
